@@ -1,0 +1,24 @@
+
+
+procedure insertionSort( x : array of items )
+   int position
+   int valueToInsert
+
+   for i = 1 to length(x) inclusive do:
+
+       select value to be inserted /
+      valueToInsert = x[i]
+      position = i
+
+      
+      while position > 0 and x[position-1] > valueToInsert do:
+         x[position] = x[position-1]
+         position = position -1
+      end while
+
+      / inserting the number at hole position 
+      x[position] = valueToInsert
+
+   end for
+
+end procedure
